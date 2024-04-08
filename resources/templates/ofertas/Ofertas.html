@@ -18,33 +18,35 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	<nav class="navbar navbar-expand-md navbar-light">
 		<div class="container-fluid">
-			<a th:href="@{/tecnopracticas/programas}"><img th:src="@{/images/LogoTC.png}" alt="" width="145px"
-					height="" /></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarText">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-				<h5>
-					<p id="Nperfil" th:text="${username}"></p>
-				</h5>
-				&nbsp;&nbsp;&nbsp;
-			</div>
-
-			<div class="form-file2">
-				<div class="form-file__action2"></div>
-
-				<div class="form-file__result2" id="result-image2">
-					<img id="img-result2" alt="" />
-				</div>
-
-				<a th:href="@{/tecnopracticas/myaccount}">Ver perfil</a>
-			</div>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbar-toggler">
+			<a class="navbar-brand" href="#">
+			  <img src="/resources/static/images/LOGOHEADER.png" width="50" alt="Logo de la página web">
+			</a>
+			<ul class="navbar-nav d-flex justify-content-center align-items-center">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#admisiones">Admisiones</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#programas">Programas</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#apoyo-financiero">Apoyo Financiero</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#normatividad">Normatividad</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/Practicas/practicas.html">Practicas</a>
+			</li>
+			</ul>
+		  </div>
 		</div>
-	</nav>
+	  </nav>  
 	<br />
 	<div class="container">
 		<div class="row">
